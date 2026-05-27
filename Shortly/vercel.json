@@ -1,0 +1,8 @@
+{
+  "rewrites": [
+    {
+      "source": "/api/(.*)",
+      "destination": "https://cleanuri.com/api/v1/$1"
+    }
+  ]
+}

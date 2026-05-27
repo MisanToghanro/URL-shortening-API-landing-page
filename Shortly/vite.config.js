@@ -7,4 +7,14 @@ export default defineConfig({
   plugins: [react(),
     tailwindcss(),
   ],
+// vite.config.js
+server: {
+  proxy: {
+    '/api': {
+      target: 'https://cleanuri.com/api/v1',
+      changeOrigin: true,
+      rewrite: (path) => path.replace(/^\/api/, ''),
+    },
+  },
+},
 })

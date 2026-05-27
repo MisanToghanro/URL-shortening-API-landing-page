@@ -38,7 +38,7 @@ const socialLogos = [
   },
 ];
     return (
-        <footer className="bg-(--clr-gray-950) text-white py-16">
+        <footer className="bg-gray-950 text-white py-16">
             <div className="flex  flex-col md:flex-row items-center gap-12 md:justify-between md:items-start mx-auto container">
                 <img src="/assets/images/logo.svg" alt="shorlty-logo"  className="brightness-0 invert"/>
 
@@ -50,7 +50,7 @@ const socialLogos = [
 
                             <ul className="space-y-3 text-sm text-gray-500">
                                  {section.links.map((link, indx) => (
-                                    <li key={indx} href="#" className="transition hover:text-(--clr-cyan)">
+                                    <li key={indx} href="#" className="transition hover:text-cyan">
                                         <a >{link}</a>
                                     </li>
                                  ))}
